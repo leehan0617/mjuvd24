@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>시각디자인 졸업전시회 홈페이지</title>
+    <script defer src="js/jquery.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa8WAmXnAREcnuEw2JkZkXQhaWsXtS7Jw"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+</head> 
+<body>
+    <div id="mjVideo">
+        <!-- video -->
+        <video src="video/sample_video_2.mp4" width="100%" height="100%" loop="loop" autoplay controls>   
+        </video>
+        <!-- end video -->
+    </div>
+    <div id="mjMenubar">
+        <!-- menu header -->
+        <div class="menu-item">
+            <div id="mjLogo">
+                <img src="img/gnb_logo.png"></img>
+            </div>
+            <div id="mjMenuList">
+                <a href="#mjImg" id="headerAbout" class="menuLink menuRadio">About</a>
+                <a href="#mjPortfolioList" id="headerPortfolio" class="menuLink">Portfolio</a>
+                <a href="#mjDirection" id="headerDirection" class="menuLink2">Direction</a>
+            </div>
+        </div>
+        <!-- menu header -->
+    </div>
+
+    <div id="mjWrap">
+        <div class="leftSide">&nbsp;</div>
+        <!-- main img -->
+        <div id="mjImg">
+            <img src="img/bannerImg.png" class="img-responsive" alt="Responsive image">
+        </div>
+        <!-- //main img -->
+         <div class="rightSide">&nbsp;</div>
+    </div>
+    <!-- blank -->
+    <div style="height:200px;">
+    </div>
+    <!-- //blank -->
+    <!-- table top border -->
+    <div class="topBorderDiv">
+        <table class="topBorder">
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!-- // table top border -->
+    <!-- portfolio -->
+    <div class="mjMenuName">
+        Portfolio
+    </div>
+
+    <div id="mjPortfolioList">
+        <a href="#tagIllust">Illust</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#tagBranding">Branding</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#tagEditorial">Editorial</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#tagUx">UX Design</a>
+    </div>
+    <!-- //portfolio -->
+
+    <!-- illust slider -->
+    <div class="mj1">
+        <div class="r1" id="illustSlider">
+            <ul>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+            </ul>
+        </div>
+
+        <div class="r2" id="illustThumbnailList">
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+        </div>
+
+        <div class="slideDot">
+            <img src="img/btn_rollover_on.png"/>
+            <img src="img/btn_rollover_off.png"/>
+        </div>
+
+        <div class="r3" id="tagIllust">
+            <img src="img/tag_Illust.png" class="tagIcon">
+        </div>
+    </div>
+    <!-- end illust slider -->
+
+    <!-- branding slider -->
+    <div class="mj1">
+        <div class="r1" id="brandingSlider">
+            <ul>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+            </ul>
+        </div>
+
+        <div class="r2" id="brandingThumbnailList">
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+        </div>
+
+        <div class="slideDot">
+            <img src="img/btn_rollover_on.png"/>
+            <img src="img/btn_rollover_off.png"/>
+        </div>
+
+        <div class="r3" id="tagBranding">
+            <img src="img/tag_Branding.png" class="tagIcon">
+        </div>
+    </div>
+    <!-- end branding slider -->
+
+    <!-- editorialSlider -->
+    <div class="mj1">
+        <div class="r1" id="editSlider">
+            <ul>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+            </ul>
+        </div>
+
+        <div class="r2" id="editThumbnailList">
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+        </div>
+
+        <div class="slideDot">
+            <img src="img/btn_rollover_on.png"/>
+            <img src="img/btn_rollover_off.png"/>
+        </div>
+
+        <div class="r3" id="tagEditorial">
+            <img src="img/tag_Editorial.png" class="tagIcon">
+        </div>
+    </div>
+    <!-- end editorialSlider -->
+
+    <!-- ux slider -->
+    <div class="mj1">
+        <div class="r1" id="uxSlider">
+            <ul>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img01.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img02.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img03.jpg" style="width:100%; height:100%;"/></li>
+                <li><img src="img/img04.jpg" style="width:100%; height:100%;"/></li>
+            </ul>
+        </div>
+
+        <div class="r2" id="uxThumbnailList">
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+            <img src="img/img01.jpg" class="smallImg"/>
+            <img src="img/img02.jpg" class="smallImg"/>
+            <img src="img/img03.jpg" class="smallImg"/>
+            <img src="img/img04.jpg" class="smallImg"/>
+        </div>
+
+        <div class="slideDot">
+            <img src="img/btn_rollover_on.png"/>
+            <img src="img/btn_rollover_off.png"/>
+        </div>
+        
+        <div class="r3" id="tagUx">
+            <img src="img/tag_Ux.png" class="tagIcon">
+        </div>
+    </div>
+    <!-- end ux slider -->
+    
+    <!-- table top border -->
+    <div class="topBorderDiv">
+        <table class="topBorder">
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!-- // table top border -->
+    <!-- portfolio -->
+    <div class="mjMenuName" style="margin-bottom:100px;">
+        Direction
+    </div>
+
+    <div id="mjDirection" style="margin-bottom:75px; width:100%; height:510px;">
+    </div>
+    
+    <div class="mj1" style="margin-bottom:210px; padding:0 4.5%">
+        <img src="img/directionImg.png" style="width:100%;"/>
+    </div>
+
+    <div id="mjFooter">
+        <div class="mj1" style="padding-right:4.68%; padding-left:4.68%; font-size:12px;">
+            <span id="han1">명지대학교 시각디자인전공 경기도 용인시 처인구 명지로 116 명지대학교 디자인조형센터</span><br/>
+            Copyright (C) 2016 hongikArt Center Research Institute. All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>

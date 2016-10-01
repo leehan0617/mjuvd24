@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+@font-face{
+	font-family : 'Gotham';
+	src : url(font/Gotham_Book.ttf) format('truetype');
+}
+
+@font-face{
+	font-family : 'Yoon_520TT';
+	src : url(font/Yoon_520TT.ttf) format('truetype');
+}
+
+@font-face{
+	font-family : 'Yoon-540TT';
+	src : url(font/Yoon_540TT.ttf) format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family : Gotham
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	font-size:21px;
+	color:#7a7a7a;
+}
+
+a:active{
+	color:#e70c00;
+}
+
+a:hover{
+	text-decoration: none;
+	color:#e70c00;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+img:hover{
+	cursor: pointer;
+}
+
+#han1{
+	font-family: Yoon_520TT
+}
+
+#mjVideo {
+	background-color: #ffffff;
+	position: fixed;
+	top : 0px;
+	left: 0px;
+	width:100%;
+	height: 685px;
+}
+
+#mjVideo video {
+    position: relative;
+}
+
+#mjMenubar {
+    position: fixed;
+    top: 685px;
+    left: 0px;
+      
+    width:100%;
+    height: 130px;
+    
+    background-color: #ffffff;
+    z-index:100;
+}
+#mjMenubar.fixed {
+    opacity: 0.95;
+    -webkit-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
+}   
+#mjWrap {
+    margin-top:815px;
+    background-color:#f44e45;
+}
+
+.leftSide , .rightSide {
+	width : 16.6666%;
+	float:left;
+}
+
+.menu-item{
+	float:left;
+	width:100%;
+	padding-left:21.688%;
+}
+
+#mjLogo{
+	padding-top : 40px;
+	padding-bottom: 40px;
+	height:50px;
+	float:left;
+}
+
+#mjMenuList{
+	padding-left:50%;
+	padding-top:50px;
+}
+
+.menuRadio{
+	color:#e70c00;
+}
+.menuLink{
+	padding-right:80px;
+}
+
+.topBorderDiv{
+	padding-left:49.7%;
+}
+
+.topBorder{
+	width:1.56%; 
+	border-top:1px solid #646464;
+}
+
+.mjMenuName{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:47%;
+	font-size:30px;
+	color:#646464;
+}
+
+#mjPortfolioList{
+	margin : 0 auto;
+	text-align: center;
+	font-size:18px;
+	color:#a1a1a1;
+	margin-bottom:100px;
+}
+
+.mj1{
+	margin: 0 auto;
+	padding:0 6%;
+	max-width: 66.666%;
+}
+
+.r1{
+	position: relative;
+	width:50%;
+	height:450px;
+	z-index: 10;
+}
+
+.r2{
+	position: relative;
+	width:53%;
+	top:-363px;
+	left:53%;
+	z-index: 10;
+}
+
+.r3{
+	position: relative;
+	z-index:15;
+	top:-691px;
+	left:-19px;
+}
+
+#tagIllust{
+	width:100px;
+	height:50px;
+}
+
+#tagBranding{
+	width:135px;
+	height:50px;
+}
+
+#tagEditorial{
+	width:135px;
+	height:50px;
+}
+
+#tagUx{
+	width:140px;
+	height:50px;
+}
+
+.smallImg{
+	width: 24%;
+}
+
+.tagIcon{
+	width:100%;
+	height:100%;
+}
+
+.slideDot{
+	padding-top:25px;
+	padding-left: 46%;
+	position: relative;
+	top:-371px;
+	left:32.3%;
+}
+
+/* 구굴맵 축소확대 방지 */
+#mjDirection{
+	pointer-events:none;
+}
+
+#mjFooter{
+	background-color:#f0564e; 
+	color:#ffffff;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+
+/* slider css*/
+.r1>ul{
+	overflow: hidden;
+	width:100%;
+	height:100%;	
+}
+
+.r1>ul>li{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.r2>img{
+	border:1px solid #ffffff;
+	opacity: 0.3;
+}
+.r2>.on{
+	border-color:red;
+	opacity: 1;
+}
+}
+/*end slider css*/
