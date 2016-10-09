@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@font-face{
+	font-family : 'Gotham';
+	src : url(font/Gotham_Book.ttf) format('truetype');
+}
+
+@font-face{
+	font-family : 'Yoon_520TT';
+	src : url(font/Yoon_520TT.ttf) format('truetype');
+}
+
+@font-face{
+	font-family : 'Yoon-540TT';
+	src : url(font/Yoon_540TT.ttf) format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #f3f3f3;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+	white-space: nowrap;
+	overflow-x:scroll;
+}
+#wrap{
+	max-width: 1280px;
+	margin : 0 auto;
+}
+
+#topDiv{
+	margin : 0 90px;
+}
+
+.topDivBox{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.subTopDivBox{
+	display:inline-block;
+	vertical-align: top;
+}
+
+#wrap2{
+	max-width: 1920px;
+	margin : 0 auto;
+}
+#mjFooter{
+	background-color:#f0564e; 
+	color:#ffffff;
+	padding-top:60px;
+	padding-bottom:60px;
+}

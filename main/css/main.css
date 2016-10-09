@@ -89,23 +89,33 @@ img:hover{
 	cursor: pointer;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #han1{
 	font-family: Yoon_520TT
 }
 
+#wrap {
+	max-width: 1920px;
+	min-width: 1280px;
+	margin: 0 auto;
+}
+
+/* video */
 #mjVideo {
 	background-color: #ffffff;
-	position: fixed;
+	/*position: fixed;
 	top : 0px;
 	left: 0px;
-	width:100%;
-	height: 685px;
+	*/
 }
+/* end video*/
 
-#mjVideo video {
-    position: relative;
-}
-
+/* menu header */
 #mjMenubar {
     position: fixed;
     top: 685px;
@@ -113,15 +123,85 @@ img:hover{
       
     width:100%;
     height: 130px;
-    
+    padding-left:16.6666%;
+    padding-right:16.6666%;
+
     background-color: #ffffff;
     z-index:100;
 }
+
 #mjMenubar.fixed {
     opacity: 0.95;
     -webkit-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
     box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
-}   
+}
+
+.boxItem1{
+	display: inline-block;
+}
+
+#mjLogo{
+	padding-top:40px;
+	padding-bottom:40px;
+
+}
+
+@media screen and (min-width:1820px){
+	#mjLogo{
+		margin-right: 60%;
+	}
+}
+
+@media screen and (max-width:1819px) and (min-width: 1580px){
+	#mjLogo{
+		margin-right:55%;
+	}	
+}
+
+@media screen and (max-width:1579px) and (min-width: 1400px){
+	#mjLogo{
+		margin-right:50%;
+	}	
+}
+
+@media screen and (max-width:1400px) and (min-width: 1280px){
+	#mjLogo{
+		margin-right:45%;
+	}	
+}
+
+@media screen and (max-width:1279px) and (min-width: 950px){
+	#mjLogo{
+		margin-right:30%;
+	}	
+}
+
+@media screen and (max-width: 949px) and (min-width: 720px){
+	#mjLogo{
+		margin-right:10%; 
+	}
+}
+
+
+.menuLink{
+	padding-right:4.1666%;
+}
+
+/* end menu header */   
+
+/* mainImg*/
+#mjMainImg{
+	margin-top:130px;
+	padding-left:12%;
+    padding-right:12%;
+    background-color:#f44e45;
+}
+/* end mainImg*/
+
+
+
+
+
 #mjWrap {
     margin-top:815px;
     background-color:#f44e45;
@@ -138,13 +218,6 @@ img:hover{
 	padding-left:21.688%;
 }
 
-#mjLogo{
-	padding-top : 40px;
-	padding-bottom: 40px;
-	height:50px;
-	float:left;
-}
-
 #mjMenuList{
 	padding-left:50%;
 	padding-top:50px;
@@ -153,10 +226,6 @@ img:hover{
 .menuRadio{
 	color:#e70c00;
 }
-.menuLink{
-	padding-right:80px;
-}
-
 .topBorderDiv{
 	padding-left:49.7%;
 }
@@ -206,7 +275,7 @@ img:hover{
 .r3{
 	position: relative;
 	z-index:15;
-	top:-691px;
+	top:-620px;
 	left:-19px;
 }
 
@@ -241,7 +310,7 @@ img:hover{
 
 .slideDot{
 	padding-top:25px;
-	padding-left: 46%;
+	padding-left: 40%;
 	position: relative;
 	top:-371px;
 	left:32.3%;
