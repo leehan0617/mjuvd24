@@ -89,6 +89,10 @@ body{
 	vertical-align: top;
 }
 
+#midDiv{
+	margin: 0 90px;
+}
+
 #wrap2{
 	max-width: 1920px;
 	margin : 0 auto;
