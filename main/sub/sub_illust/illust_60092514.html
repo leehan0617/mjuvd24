@@ -6,7 +6,30 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="../../css/sub.css"/>
+
 	<!-- js -->
+	<script src="../../js/jquery.js"></script>
+	<script>
+	$(function(){
+		$('#accordian').find('span').click(function(){
+			$(this).parent().find('span').not(this).next().slideUp();
+			$(this).next().slideToggle(300);
+		});		
+	})
+	</script>
+
+	<style>
+	ul{
+		margin:auto;
+		border-bottom:0 none;
+	}
+
+	ul li {
+		border-bottom : 1px solid #f0564e;
+		margin-bottom:20px;
+	}
+
+	</style>
 </head>
 <body>
 	<div id="wrap">
@@ -17,45 +40,63 @@
 		<!-- 상위 div -->
 		<div id="topDiv">
 			<div class="topDivBox" style="padding-right:65px;">
-				<img src="../illust_img/img01.jpg" style="width:625px; height:600px;"/>	
+				<img src="../illust_img/sub_left.jpeg" style="width:625px; height:600px;"/>	
 			</div>
 			<div class="topDivBox">
-				<div style="font-size:21px; margin-bottom:25px; font-family:Gotham;">Branding</div>
+				<div style="font-size:21px; margin-bottom:25px; font-family:Gotham; color:#646464;">Branding</div>
 				<div style="font-size:36px; color:#f0564e;">궁따라길따라</div>
 				<div style="font-size:18px; color:#f0564e; margin-bottom:30px;">Program Identity</div>
 				<div style="font-size:16px; color:#515151; margin-bottom:100px;">유네스코 지정 세계문화유산인 화성에 자부심을 느끼고, 화성 및<br/> 화성행궁의 가치를 더 많은 사람들에게 일깨우고자 한다. 기존의<br/> 수원문화재단에서 관리하고 있는 탐방프로그램을 분리시켜 하나<br/>의 독립적인 관광 프로그램으로 만들었다. 탐방에 불편했던점을<br/> 개선하고 기존의 것에서 발전된 컨텐츠를 제시하여 관광객이 더욱<br/> 편리하게 탐방을 즐길 수 있도록 하였다.</div>
 				<div>
-					<div class="subTopDivBox" style="padding-right:20px;"><img src="../illust_img/img01.jpg" style="width:90px; height:90px;"></div>
+					<div class="subTopDivBox" style="padding-right:20px;"><img src="../illust_img/sub_photo.jpeg" style="width:90px; height:90px;"></div>
 					<div class="subTopDivBox" style="padding-top:20px;">
-						<span style="font-size:18px; padding-right:5px;">김가영</span>
-						<span style="font-size:12px;">Kim kayoung</span>
-						<div style="padding-top:20px;">
-							bezzy59@naver.com<br/>
-							010.2011.6825
+						<span style="font-size:18px; padding-right:5px; color:#646464;">한헌영</span>
+						<span style="font-size:12px; color:#646464;">Han HeonYeong</span>
+						<div style="padding-top:20px; color:#535353;">
+							hh7330485@naver.com<br/>
+							010.6818.0485
 						</div>
 					</div>
 				</div>
 				<!-- 아코디언 -->
 				<div style="padding-top:40px; height:35px;cursor:pointer; margin-bottom:20px;">
-					<img src="../../img/btn_arrow_scrollDown.png" style="padding-left:10px;padding-right:15px; align:center"/>
-					<span style="font-size:20px; color:#f0564e;">SUBJECT</span>
-				</div>
-				<div style="padding-top:40px; height:35px; cursor:pointer;">
-					<img src="../../img/btn_arrow_scrollDown.png" style="padding-left:10px;padding-right:15px;"/>
-					<span style="font-size:20px; color:#f0564e;">MEMBER</span>
+					<ul id="accordian">
+						<li>
+							<img src="../../img/btn_arrow_scrollDown.png" style="padding-left:10px;padding-right:15px; align:center"/>
+							<span style="font-size:20px; color:#f0564e;">SUBJECT</span>
+							<div style="line-height:200%; padding-left:40px; margin-top:30px; margin-bottom:30px; height:100%; color:#535353;">
+									Illust<br/>
+									<hanbin style="color:#f0564e;">Branding</hanbin><br/>
+									Editorial<br/>
+									UX Desigin<br/>
+							</div>
+						</li>
+						<li>
+							<img src="../../img/btn_arrow_scrollDown.png" style="padding-left:10px;padding-right:15px;"/>
+							<span style="font-size:20px; color:#f0564e;">MEMBER</span>
+							<div style="margin-top:30px; word-spacing:15px; line-height:200%;padding-left:35px; color:#535353;">
+								김가영 김은경 김현정 김연주 고동완 성혜지<br/>
+								민희수 이성희 이세라 이혜진 주우현 문성완<br/>
+								신준범 조희정 남윤주 이하영 조우영 이지혜<br/>
+								이태수 최지현 차아랑 정서희 조송연 <hanbin style="color:#f0564e;">한헌영</hanbin><br/>
+								황우빈 주호
+							</div>
+						</li>
+					</ul>
+					
 				</div>
 				<!-- 아코디언 -->
 			</div>
 		</div>
 
 		<!-- topDiv에서 130px 밑에 위치한다. -->
-		<div style="height:130px;">
+		<div style="height:350px;">
 		</div>
 
 		<!-- 중간 div -->
 		<div id="midDiv">
 			<div>
-				<img src="../illust_img/img01.jpg" style="width:1100px; height:730px;"/>
+				<img src="../illust_img/sub_main.jpeg" style="width:1100px; height:100%;"/>
 			</div> 
 		</div>
 	</div>

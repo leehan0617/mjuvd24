@@ -2,17 +2,26 @@
 
 @font-face{
 	font-family : 'Gotham';
-	src : url(font/Gotham_Book.ttf) format('truetype');
+	src : url(../font/Gotham-Book.oft.eot) format('truetype');
+	src : url(../font/Gotham_Book.ttf) format('truetype');
+	src : url(../font/Gotham-Book.woff) format('truetype');
 }
 
 @font-face{
-	font-family : 'Yoon_520TT';
-	src : url(font/Yoon_520TT.ttf) format('truetype');
+	font-family : 'Yoon_520';
+	src : url(../font/Yoon520.eot) format('truetype');
+	src : url(../font/Yoon_520TT.ttf) format('truetype');
 }
 
 @font-face{
-	font-family : 'Yoon-540TT';
-	src : url(font/Yoon_540TT.ttf) format('truetype');
+	font-family : 'Yoon-540';
+	src: url(../font/Yoon540.eot) format('truetype');
+	src : url(../font/Yoon_540TT.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'Yoon-360';
+	src: url(../font/Yoon360.eot) format('truetype');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -32,7 +41,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: Gotham;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -69,6 +78,7 @@ table {
 body{
 	white-space: nowrap;
 	overflow-x:scroll;
+	font-family: Gotham;
 }
 #wrap{
 	max-width: 1280px;
@@ -88,6 +98,8 @@ body{
 	display:inline-block;
 	vertical-align: top;
 }
+
+ul li >div{display: none; height:200px;}
 
 #midDiv{
 	margin: 0 90px;
