@@ -95,6 +95,10 @@ img:hover{
           box-sizing: border-box;
 }
 
+body{
+	white-space: nowrap;
+	overflow-x:scroll;
+}
 #han1{
 	font-family: Yoon_520TT
 }
@@ -104,6 +108,8 @@ img:hover{
 	min-width: 1280px;
 	margin: 0 auto;
 }
+
+
 
 /* video */
 #mjVideo {
@@ -275,7 +281,7 @@ img:hover{
 .r3{
 	position: relative;
 	z-index:15;
-	top:-620px;
+	top:-650px;
 	left:-19px;
 }
 
