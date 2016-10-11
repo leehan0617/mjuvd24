@@ -188,27 +188,25 @@ function googleMapInit(){
     var contentString = '<div>명지대학교<br/>시각디자인학과 졸업전시회</div>';
 
     var myLatlng = new google.maps.LatLng(x_point, y_point);
-            var mapOptions = {
-                                zoom: zoomLevel,
-                                center: myLatlng,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(document.getElementById('mjDirection'), mapOptions);
+    var mapOptions = {
+        zoom: zoomLevel,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById('mjDirection'), mapOptions);
 
-            var marker = new google.maps.Marker({
-                                                    position: myLatlng,
-                                                    map: map,
-                                                    title: markerTitle
-            });
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: markerTitle
+    });
 
-            var infowindow = new google.maps.InfoWindow(
-                                                        {
-                                                            content: contentString,
-                                                            maxWidth: markerMaxWidth
-                                                        }
-            );
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: markerMaxWidth
+    });
 
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map, marker);
-            });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+    });
 }
