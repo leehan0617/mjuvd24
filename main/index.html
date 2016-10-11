@@ -32,14 +32,16 @@
 	<!-- end video section -->
 
 	<!-- menuBar -->
-	<nav id="menuNav">
-		<ul>
-			<li style="margin-right:510px;"><a href="#"><img src="img/gnb_logo.png"></img></a></li>
-			<li style="vertical-align:middle;"><a href="#mainImgSection">About</a></li>
-			<li style="vertical-align:middle; margin-left:80px;"><a href="#portfolio">Portfolio</a></li>
-			<li style="vertical-align:middle; margin-left:80px;"><a href="#googleMap">Direction</a></li>
-		</ul>
-	</nav>
+	<section id="navWrap">
+		<nav id="menuNav" align="center">
+			<ul>
+				<li style="margin-right:510px;"><a href="#"><img src="img/gnb_logo.png"></img></a></li>
+				<li style="vertical-align:middle;"><a href="#mainImgSection" id="headerAbout">About</a></li>
+				<li style="vertical-align:middle; margin-left:80px;"><a href="#portfolio" id="headerPortfolio">Portfolio</a></li>
+				<li style="vertical-align:middle; margin-left:80px;"><a href="#googleMap" id="headerDirection">Direction</a></li>
+			</ul>
+		</nav>
+	</section>
 	<!-- menuBar -->
 
 	<!-- main Img -->
@@ -56,13 +58,13 @@
 	</section>
 	<nav id="portfolioNav">
 			<ul>
-				<li class="link">Illust</li>
+				<li class="link"><a href="#illust">Illust</a></li>
 				<li>/</li>
-				<li class="link">Branding</li>
+				<li class="link"><a href="#branding">Branding</a></li>
 				<li>/</li>
-				<li class="link">Editorial</li>
+				<li class="link"><a href="#editorial">Editorial</a></li>
 				<li>/</li>
-				<li class="link">UX Design</li>
+				<li class="link"><a href="#ux">UX Design</a></li>
 			</ul>
 	</nav>
 	<!-- end portfolio letter-->
@@ -71,6 +73,14 @@
 	<section id="illust">
 		<div class="portfolioBox mainSlide">
 			<ul class="bxSlider">
+                <li><img src="img/img01.jpg" title="60092514_한헌영" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img04.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img01.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img04.jpg" style="width:650px; height:450px;"/></li>
                 <li><img src="img/img01.jpg" title="60092514_한헌영" style="width:650px; height:450px;"/></li>
                 <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
                 <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
@@ -215,21 +225,23 @@
 	</section>
 	<!-- end Ux design-->
 	
-	<!-- direction letter-->
+	<!-- direction title-->
 	<section id="direction">
 		<div align="center" style="margin-bottom:20px;"><img src="img/main_direction.png" alt="Direction"/></div>
 	</section>
-	<!-- direction letter -->
+	<!-- direction title -->
 
 	<!-- googleMap section -->
 	<section id="googleMap">
 	</section>
 	<!-- end googleMap section -->
+	
 	<!-- direction letter -->
 	<section id="directionLetter">
 		<img src="img/directionImg.png" style="width:100%;"/>
 	</section>
 	<!-- end direction letter -->
+
 	<!-- footer -->
 	<section id="footerWrap">
 		<footer id="footerSection">
