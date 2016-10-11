@@ -15,7 +15,7 @@ window.onload = function() {
 $(function(){
     //google map 실행
     googleMapInit();
-
+    $('.test').hide();
     /* soft scroll */
     $('a[href^="#"]').on('click',function (e) {
         //e.preventDefault();
@@ -35,22 +35,9 @@ $(function(){
         auto : true,
         pagerCustom: '#bx-pager',
         onSlideAfter : function($slideElement , oldIndex , newIndex){
-            /*console.log('test');
-            console.log($slideElement);
-            console.log(oldIndex);
-            console.log(newIndex)
-            ;*/
             if(newIndex == '7'){
-                $('#bx-pager').children().remove();
-                $('#bx-pager').append('<a data-slide-index="8" href=""><img src="img/img01.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<a data-slide-index="9" href=""><img src="img/img02.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<a data-slide-index="10" href=""><img src="img/img03.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<a data-slide-index="11" href=""><img src="img/img04.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<a data-slide-index="12" href=""><img src="img/img01.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<br/>');
-                $('#bx-pager').append('<a data-slide-index="13" href=""><img src="img/img02.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<a data-slide-index="14" href=""><img src="img/img03.jpg" style="width:130px; height:130px;"/></a>');
-                $('#bx-pager').append('<a data-slide-index="15" href=""><img src="img/img04.jpg" style="width:130px; height:130px;"/></a>');
+                $('.test2').hide();
+                $('.test').show();
             }
         }
     });
