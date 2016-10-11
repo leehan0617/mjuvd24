@@ -15,7 +15,15 @@ window.onload = function() {
 $(function(){
     //google map 실행
     googleMapInit();
-    $('.test').hide();
+
+    $('.secondSlideList').hide();
+    $('.thirdSlideList').hide();
+
+    $('#illustFirstPointer').removeClass('slideDotOff');
+    $('#illustFirstPointer').addClass('slideDotOn');
+    // $('#illustSecondPointer').removeClass('');
+    // $('#illustThirdPointer').removeClass('');
+
     /* soft scroll */
     $('a[href^="#"]').on('click',function (e) {
         //e.preventDefault();
@@ -34,13 +42,69 @@ $(function(){
         captions : true,
         auto : true,
         pagerCustom: '#bx-pager',
-        onSlideAfter : function($slideElement , oldIndex , newIndex){
-            if(newIndex == '7'){
-                $('.test2').hide();
-                $('.test').show();
+        //임의로 없애기위해서 셀럭터이름 무작이로 지음
+        nextSelector: '#dd',
+        prevSelector: '#ss',
+        onSlideNext : function($slideElement, oldIndex, newIndex){
+            console.log(oldIndex , newIndex);
+            if(newIndex == '8'){
+                $('.secondSlideList').show();
+                $('.firstSlideList').hide();
+                $('.thirdSlideList').hide();
+                
+                $('#illustSecondPointer').removeClass('slideDotOff');
+                $('#illustSecondPointer').addClass('slideDotOn');
+
+                $('#illustFirstPointer').removeClass('slideDotOn');
+                $('#illustFirstPointer').addClass('slideDotOff');
+
+                $('#illustThirdPointer').removeClass('slideDotOn');
+                $('#illustThirdPointer').addClass('slideDotOff');
+            }else if(newIndex == '16'){
+                $('.thirdSlideList').show();
+                $('.firstSlideList').hide();
+                $('.secondSlideList').hide();
+
+                $('#illustThirdPointer').removeClass('slideDotOff');
+                $('#illustThirdPointer').addClass('slideDotOn');
+
+                $('#illustSecondPointer').removeClass('slideDotOn');
+                $('#illustSecondPointer').addClass('slideDotOff');
+
+                $('#illustFirstPointer').removeClass('slideDotOn');
+                $('#illustFirstPointer').addClass('slideDotOff');
+            }else if(newIndex == '0'){
+                $('.firstSlideList').show();
+                $('.secondSlideList').hide();
+                $('.thirdSlideList').hide();
+
+                $('#illustFirstPointer').removeClass('slideDotOff');
+                $('#illustFirstPointer').addClass('slideDotOn');
+
+                $('#illustSecondPointer').removeClass('slideDotOn');
+                $('#illustSecondPointer').addClass('slideDotOff');
+
+                $('#illustThirdPointer').removeClass('slideDotOn');
+                $('#illustThirdPointer').addClass('slideDotOff');
             }
         }
     });
+    
+    $('#illustFirstPointer').click(function(){
+        // console.log('test');
+        var slider = $('.bxSlider').bxSlider();
+        // slider.stopAuto();
+        // slider.goToSlide(23);
+        // slider.startAuto();
+    });
+    // $('#illustSecondPointer').click(function(){
+
+        // });
+
+        // $('#illustThirdPointer').click(function(){
+
+        // });
+
 
     // branding slider
     var bxSlider2 = $('.bxSlider2').bxSlider({
@@ -148,4 +212,4 @@ function googleMapInit(){
     google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map, marker);
     });
-}
+}$('#illustSecondPointer').addClass('slideDotOff');

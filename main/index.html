@@ -25,9 +25,11 @@
 </head>
 <body>
 	<!-- video section -->
-	<section id="videoSection">
-		<video src="video/sample_video_2.mp4" width="100%" height="685px" loop="loop" autoplay controls>   
-        </video>
+	<section id="videoWrap">
+		<div id="videoSection">
+			<video src="video/sample_video_2.mp4" width="100%" height="685px" loop="loop" autoplay controls>   
+	        </video>
+		</div>
 	</section>
 	<!-- end video section -->
 
@@ -35,7 +37,7 @@
 	<section id="navWrap">
 		<nav id="menuNav" align="center">
 			<ul>
-				<li style="margin-right:510px;"><a href="#"><img src="img/gnb_logo.png"></img></a></li>
+				<li style="margin-right:510px;"><a href="#"><img src="img/logo.png"></img></a></li>
 				<li style="vertical-align:middle;"><a href="#mainImgSection" id="headerAbout">About</a></li>
 				<li style="vertical-align:middle; margin-left:80px;"><a href="#portfolio" id="headerPortfolio">Portfolio</a></li>
 				<li style="vertical-align:middle; margin-left:80px;"><a href="#googleMap" id="headerDirection">Direction</a></li>
@@ -54,7 +56,7 @@
 
 	<!-- portfolio letter-->
 	<section id="portfolio">
-		<div align="center" style="margin-bottom:20px;"><img src="img/main_portfolio.png" alt="Portfolio"/></div>
+		<div align="left" style="margin-bottom:20px;"><img src="img/PortfolioTitle.png" alt="Portfolio"/></div>
 	</section>
 	<nav id="portfolioNav">
 			<ul>
@@ -71,54 +73,71 @@
 
 	<!-- illust -->
 	<section id="illust">
+		<div align="left" style="margin-bottom:10px;">
+			<p class="portfolioTitle">Illust</p>
+		</div>
 		<div class="portfolioBox mainSlide">
 			<ul class="bxSlider">
-                <li><img src="img/img01.jpg" title="60092514_한헌영" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img04.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img01.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img04.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img01.jpg" title="60092514_한헌영" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img04.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img01.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img02.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img03.jpg" style="width:650px; height:450px;"/></li>
-                <li><img src="img/img04.jpg" style="width:650px; height:450px;"/></li>
+                <li><img src="img/img01.jpg" class="slideBigImg" title="60092514_한헌영"/></li>
+                <li><img src="img/img02.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img03.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img04.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img01.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img02.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img03.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img04.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img01.jpg" class="slideBigImg" title="60092514_한헌영"/></li>
+                <li><img src="img/img02.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img03.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img04.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img04.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img03.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img02.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img01.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img01.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img03.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img02.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img04.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img04.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img02.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img03.jpg" class="slideBigImg"/></li>
+                <li><img src="img/img01.jpg" class="slideBigImg"/></li>
             </ul>
 		</div>
-		<div id="bx-pager" class="portfolioBox thumbnail" style="vertical-align:top; margin-top:110px;">
-			<a data-slide-index="0" href=""class="test2"><img src="img/img01.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="1" href=""class="test2"><img src="img/img02.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="2" href=""class="test2"class="test"><img src="img/img03.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="3" href=""class="test2"><img src="img/img04.jpg" style="width:130px; height:130px;"/></a>
-			<br/>
-			<a data-slide-index="4" href=""class="test2"><img src="img/img01.jpg" style="width:130px; height:130px;" /></a>
-			<a data-slide-index="5" href=""class="test2"><img src="img/img02.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="6" href=""class="test2"class="test"><img src="img/img03.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="7" href=""class="test2"class="test"class="test"><img src="img/img04.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="8" href="" class="test"><img src="img/img01.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="9" href="" class="test"><img src="img/img02.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="10" href="" class="test"><img src="img/img03.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="11" href="" class="test"><img src="img/img04.jpg" style="width:130px; height:130px;"/></a>
-			<br/>
-			<a data-slide-index="12" href="" class="test"><img src="img/img01.jpg" style="width:130px; height:130px;" /></a>
-			<a data-slide-index="13" href="" class="test"><img src="img/img02.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="14" href="" class="test"><img src="img/img03.jpg" style="width:130px; height:130px;"/></a>
-			<a data-slide-index="15" href="" class="test"><img src="img/img04.jpg" style="width:130px; height:130px;"/></a>
+		<div id="bx-pager" class="portfolioBox thumbnail" style="vertical-align:top; width:682px;">
+			<a data-slide-index="0" href="" class="firstSlideList"><img src="img/img01.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="1" href="" class="firstSlideList"><img src="img/img02.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="2" href="" class="firstSlideList"><img src="img/img03.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="3" href="" class="firstSlideList"><img src="img/img04.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="4" href="" class="firstSlideList"><img src="img/img01.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="5" href="" class="firstSlideList"><img src="img/img02.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="6" href="" class="firstSlideList"><img src="img/img03.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="7" href="" class="firstSlideList"><img src="img/img04.jpg" class="slideSmallImg"/></a>
+			
+			<a data-slide-index="8" href=""class="secondSlideList"><img src="img/img01.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="9" href=""class="secondSlideList"><img src="img/img02.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="10" href=""class="secondSlideList"><img src="img/img03.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="11" href=""class="secondSlideList"><img src="img/img04.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="12" href=""class="secondSlideList"><img src="img/img04.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="13" href=""class="secondSlideList"><img src="img/img03.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="14" href=""class="secondSlideList"><img src="img/img02.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="15" href=""class="secondSlideList"><img src="img/img01.jpg" class="slideSmallImg"/></a>
+
+			<a data-slide-index="16" href=""class="thirdSlideList"><img src="img/img01.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="17" href=""class="thirdSlideList"><img src="img/img03.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="18" href=""class="thirdSlideList"><img src="img/img02.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="19" href=""class="thirdSlideList"><img src="img/img04.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="20" href=""class="thirdSlideList"><img src="img/img04.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="21" href=""class="thirdSlideList"><img src="img/img02.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="22" href=""class="thirdSlideList"><img src="img/img03.jpg" class="slideSmallImg"/></a>
+			<a data-slide-index="23" href=""class="thirdSlideList"><img src="img/img01.jpg" class="slideSmallImg"/></a>
 		</div>
-		<br/>
-		<div style="position:relative; left:889px; top:-75px;">
-			<img src="img/btn_rollover_on.png" style="padding-right:35px;"/>
-            <img src="img/btn_rollover_off.png" style="padding-right:35px;"/>
-            <img src="img/btn_rollover_off.png"/>
-		</div>
-		<div style="position:relative; left:-22px; top:-464px;">
-			<img src="img/tag_Illust.png">
+		<div class="portfolioBox" style="vertical-align:top; margin-top:100px; margin-left:35px;">
+			<ul>
+				<li><img src="img/slidePoint.png"/ id="illustFirstPointer" class="slideDotOff" style="margin-bottom:30px; cursor:pointer;"></li>
+				<li><img src="img/slidePoint.png"/ id="illustSecondPointer" class="slideDotOff" style="margin-bottom:30px; cursor:pointer;"></li>
+				<li><img src="img/slidePoint.png"/ id="illustThirdPointer" class="slideDotOff" style="margin-bottom:30px; cursor:pointer;"></li>
+			</ul>
 		</div>
 	</section>
 	<!-- end illust -->
@@ -236,7 +255,7 @@
 	
 	<!-- direction title-->
 	<section id="direction">
-		<div align="center" style="margin-bottom:20px;"><img src="img/main_direction.png" alt="Direction"/></div>
+		<div align="left" style="margin-bottom:20px;"><img src="img/DirectionsTitle.png" alt="Direction"/></div>
 	</section>
 	<!-- direction title -->
 
@@ -247,7 +266,7 @@
 	
 	<!-- direction letter -->
 	<section id="directionLetter">
-		<img src="img/directionImg.png" style="width:100%;"/>
+		<img src="img/direction.png" style="width:100%;"/>
 	</section>
 	<!-- end direction letter -->
 

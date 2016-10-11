@@ -6,7 +6,8 @@ body{
 	*/
 }
 
-a{
+a{	
+	font-family: Gotham;
 	font-size:21px;
 	color:#7a7a7a;
 }
@@ -16,16 +17,21 @@ a:link{
 }
 
 a:active{
-	color:#e70c00;
+	color:#28323f;
 }
 
 a:hover{
 	text-decoration: none;
-	color:#e70c00;
+	color:#28323f;
 }
 
 .changeHeaderColor{
-	color:#e70c00;
+	color:#28323f;
+	font-weight: bold;
+}
+
+#videoWrap{
+	background-color: black;
 }
 
 #videoSection {
@@ -69,12 +75,13 @@ a:hover{
 }
 
 #mainImgSectionWrap{
-	background-color:#f44e45; 
+	background-color:#eeeeee; 
 }
 
 #mainImgSection{	
 	width:1280px;
-	margin:103px auto 200px auto;
+	height:673px;
+	margin:103px auto 195px auto;
 }
 
 #portfolio{
@@ -88,7 +95,7 @@ a:hover{
 }
 
 #portfolioNav ul{
-	text-align: center;
+	text-align: left;
 }
 #portfolioNav ul li{
 	font-size: 18px;
@@ -102,6 +109,53 @@ a:hover{
 
 .portfolioBox{
 	display: inline-block;
+}
+
+.slideBigImg{
+	width:334px;
+	height:334px;
+}
+
+.slideSmallImg{
+	width:167px;
+	height:167px;
+}
+
+.mainSlide{
+	width: 334px;
+	height: 334px;
+	margin-right:64px;
+}
+
+.thumbnail{
+	height:334px;
+}
+
+.firstSlideList{
+	display: inline-block;
+}
+
+.secondSlideList{
+	display: inline-block;
+}
+
+.thirdSlideList{
+	display: inline-block;
+}
+
+.portfolioTitle{
+	font-family: Gotham;
+	font-weight: bold;
+	color:#646464;
+	font-size: 22px;
+}
+
+.slideDotOn{
+	background-color: #28323f;
+}
+
+.slideDotOff{
+	background-color: gray;
 }
 
 #illust{
@@ -128,16 +182,6 @@ a:hover{
 	margin:0 auto 300px auto;
 }
 
-.mainSlide{
-	width: 650px;
-	height: 450px;
-	margin-right:20px;
-}
-
-.thumbnail{
-	height:260px;
-}
-
 #direction{
 	width:1280px;
 	margin:0 auto 100px auto;
@@ -151,18 +195,18 @@ a:hover{
 
 #directionLetter{
 	width:1280px;
-	margin:0 auto 210px auto;
+	margin:0 auto 85px auto;
 }
 #footerWrap{
-	background-color:#f44e45;
-	height:160px;
+	background-color:#28323f;
+	height:79px;
 }
 
 #footerSection{
 	width:1280px;
 	margin:0 auto;
 	color:#ffffff;
-	padding:60px 90px;
+	padding:22px 90px;
 }
 
 #footerKorean{
@@ -172,6 +216,6 @@ a:hover{
 }
 
 #footerEnglish{
-	font-size: 16px;
+	font-size: 12px;
 	font-family: Gotham;
 }
