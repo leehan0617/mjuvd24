@@ -46,7 +46,7 @@ $(function(){
         nextSelector: '#dd',
         prevSelector: '#ss',
         onSlideNext : function($slideElement, oldIndex, newIndex){
-            console.log(oldIndex , newIndex);
+            // console.log(oldIndex , newIndex);
             if(newIndex == '8'){
                 $('.secondSlideList').show();
                 $('.firstSlideList').hide();
