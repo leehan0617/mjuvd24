@@ -4,6 +4,8 @@ body{
 	/*white-space: nowrap;
 	overflow-x:scroll;
 	*/
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 
 a{	
@@ -86,11 +88,13 @@ a:hover{
 
 #portfolio{
 	width:1280px;
+	padding:0 90px;
 	margin:0 auto;
 }
 
 #portfolioNav{
 	width: 1280px;
+	padding:0 90px;
 	margin:0 auto 100px auto;
 }
 
@@ -161,29 +165,34 @@ a:hover{
 #illust{
 	width:1280px;
 	height:450px;
+	padding:0 90px;
 	margin:0 auto 110px auto;
 }
 
 #branding{
 	width:1280px;
 	height:450px;
+	padding:0 90px;
 	margin:0 auto 110px auto;
 }
 
 #editorial{
 	width:1280px;
 	height:450px;
+	padding:0 90px;
 	margin:0 auto 110px auto;
 }
 
 #ux{
 	width:1280px;
 	height:450px;
+	padding:0 90px;
 	margin:0 auto 300px auto;
 }
 
 #direction{
 	width:1280px;
+	padding:0 90px;
 	margin:0 auto 100px auto;
 }
 
@@ -195,6 +204,7 @@ a:hover{
 
 #directionLetter{
 	width:1280px;
+	padding:0 90px;
 	margin:0 auto 85px auto;
 }
 #footerWrap{
