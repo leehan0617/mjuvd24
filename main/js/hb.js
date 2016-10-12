@@ -5,7 +5,7 @@ var currentScrollTop = 0;
 window.onload = function() {
     // 새로고침 했을 경우를 대비한 메소드 실행
     scrollController();
-     
+
     //스크롤을 하는 경우에만 실행됨
     $(window).on('scroll', function() {
         scrollController();
@@ -16,13 +16,16 @@ $(function(){
     //google map 실행
     googleMapInit();
 
+    // illust slider
     $('.secondSlideList').hide();
     $('.thirdSlideList').hide();
-
     $('#illustFirstPointer').removeClass('slideDotOff');
     $('#illustFirstPointer').addClass('slideDotOn');
-    // $('#illustSecondPointer').removeClass('');
-    // $('#illustThirdPointer').removeClass('');
+    //branding slider
+    $('.brandingSecondSlideList').hide();
+    $('.brandingThirdSlideList').hide();
+    $('#brandingFirstPointer').removeClass('slideDotOff');
+    $('#brandingFirstPointer').addClass('slideDotOn');
 
     /* soft scroll */
     $('a[href^="#"]').on('click',function (e) {
@@ -51,7 +54,7 @@ $(function(){
                 $('.secondSlideList').show();
                 $('.firstSlideList').hide();
                 $('.thirdSlideList').hide();
-                
+
                 $('#illustSecondPointer').removeClass('slideDotOff');
                 $('#illustSecondPointer').addClass('slideDotOn');
 
@@ -89,29 +92,173 @@ $(function(){
             }
         }
     });
-    
+
     $('#illustFirstPointer').click(function(){
-        // console.log('test');
-        var slider = $('.bxSlider').bxSlider();
-        // slider.stopAuto();
-        // slider.goToSlide(23);
-        // slider.startAuto();
+        bxSlider.stopAuto();
+        bxSlider.goToSlide(0);
+        bxSlider.startAuto();
+
+        // var idx = bxSlider.getCurrentSlide()
+        $('.firstSlideList').show();
+        $('.secondSlideList').hide();
+        $('.thirdSlideList').hide();
+
+        $('#illustFirstPointer').removeClass('slideDotOff');
+        $('#illustFirstPointer').addClass('slideDotOn');
+
+        $('#illustSecondPointer').removeClass('slideDotOn');
+        $('#illustSecondPointer').addClass('slideDotOff');
+
+        $('#illustThirdPointer').removeClass('slideDotOn');
+        $('#illustThirdPointer').addClass('slideDotOff');
     });
-    // $('#illustSecondPointer').click(function(){
 
-        // });
+    $('#illustSecondPointer').click(function(){
+      bxSlider.stopAuto();
+      bxSlider.goToSlide(8);
+      bxSlider.startAuto();
 
-        // $('#illustThirdPointer').click(function(){
+      $('.secondSlideList').show();
+      $('.firstSlideList').hide();
+      $('.thirdSlideList').hide();
 
-        // });
+      $('#illustSecondPointer').removeClass('slideDotOff');
+      $('#illustSecondPointer').addClass('slideDotOn');
 
+      $('#illustFirstPointer').removeClass('slideDotOn');
+      $('#illustFirstPointer').addClass('slideDotOff');
+
+      $('#illustThirdPointer').removeClass('slideDotOn');
+      $('#illustThirdPointer').addClass('slideDotOff');
+    });
+
+    $('#illustThirdPointer').click(function(){
+      bxSlider.stopAuto();
+      bxSlider.goToSlide(16);
+      bxSlider.startAuto();
+
+      $('.thirdSlideList').show();
+      $('.firstSlideList').hide();
+      $('.secondSlideList').hide();
+
+      $('#illustThirdPointer').removeClass('slideDotOff');
+      $('#illustThirdPointer').addClass('slideDotOn');
+
+      $('#illustSecondPointer').removeClass('slideDotOn');
+      $('#illustSecondPointer').addClass('slideDotOff');
+
+      $('#illustFirstPointer').removeClass('slideDotOn');
+      $('#illustFirstPointer').addClass('slideDotOff');
+    });
 
     // branding slider
     var bxSlider2 = $('.bxSlider2').bxSlider({
         mode : 'fade',
         captions : true,
         auto : true,
-        pagerCustom: '#bx-pager2'
+        pagerCustom: '#bx-pager2',
+        nextSelector: '#ddd',
+        prevSelector: '#sss',
+        onSlideNext : function($slideElement, oldIndex, newIndex){
+            // console.log(oldIndex , newIndex);
+            if(newIndex == '8'){
+                $('.brandingSecondSlideList').show();
+                $('.brandingFirstSlideList').hide();
+                $('.brandingThirdSlideList').hide();
+
+                $('#brandingSecondPointer').removeClass('slideDotOff');
+                $('#brandingSecondPointer').addClass('slideDotOn');
+
+                $('#brandingFirstPointer').removeClass('slideDotOn');
+                $('#brandingFirstPointer').addClass('slideDotOff');
+
+                $('#brandingThirdPointer').removeClass('slideDotOn');
+                $('#brandingThirdPointer').addClass('slideDotOff');
+            }else if(newIndex == '16'){
+                $('.brandingThirdSlideList').show();
+                $('.brandingFirstSlideList').hide();
+                $('.brandingSecondSlideList').hide();
+
+                $('#brandingThirdPointer').removeClass('slideDotOff');
+                $('#brandingThirdPointer').addClass('slideDotOn');
+
+                $('#brandingSecondPointer').removeClass('slideDotOn');
+                $('#brandingSecondPointer').addClass('slideDotOff');
+
+                $('#brandingFirstPointer').removeClass('slideDotOn');
+                $('#brandingFirstPointer').addClass('slideDotOff');
+            }else if(newIndex == '0'){
+                $('.brandingFirstSlideList').show();
+                $('.brandingSecondSlideList').hide();
+                $('.brandingThirdSlideList').hide();
+
+                $('#brandingFirstPointer').removeClass('slideDotOff');
+                $('#brandingFirstPointer').addClass('slideDotOn');
+
+                $('#brandingSecondPointer').removeClass('slideDotOn');
+                $('#brandingSecondPointer').addClass('slideDotOff');
+
+                $('#brandingThirdPointer').removeClass('slideDotOn');
+                $('#brandingThirdPointer').addClass('slideDotOff');
+            }
+        }
+    });
+
+    $('#brandingFirstPointer').click(function(){
+      bxSlider2.stopAuto();
+      bxSlider2.goToSlide(0);
+      bxSlider2.startAuto();
+
+      $('.brandingFirstSlideList').show();
+      $('.brandingSecondSlideList').hide();
+      $('.brandingThirdSlideList').hide();
+
+      $('#brandingFirstPointer').removeClass('slideDotOff');
+      $('#brandingFirstPointer').addClass('slideDotOn');
+
+      $('#brandingSecondPointer').removeClass('slideDotOn');
+      $('#brandingSecondPointer').addClass('slideDotOff');
+
+      $('#brandingThirdPointer').removeClass('slideDotOn');
+      $('#brandingThirdPointer').addClass('slideDotOff');
+    });
+
+    $('#brandingSecondPointer').click(function(){
+      bxSlider2.stopAuto();
+      bxSlider2.goToSlide(8);
+      bxSlider2.startAuto();
+
+      $('.brandingSecondSlideList').show();
+      $('.brandingFirstSlideList').hide();
+      $('.brandingThirdSlideList').hide();
+
+      $('#brandingSecondPointer').removeClass('slideDotOff');
+      $('#brandingSecondPointer').addClass('slideDotOn');
+
+      $('#brandingFirstPointer').removeClass('slideDotOn');
+      $('#brandingFirstPointer').addClass('slideDotOff');
+
+      $('#brandingThirdPointer').removeClass('slideDotOn');
+      $('#brandingThirdPointer').addClass('slideDotOff');
+    });
+
+    $('#brandingThirdPointer').click(function(){
+      bxSlider2.stopAuto();
+      bxSlider2.goToSlide(16);
+      bxSlider2.startAuto();
+
+      $('.brandingThirdSlideList').show();
+      $('.brandingFirstSlideList').hide();
+      $('.brandingSecondSlideList').hide();
+
+      $('#brandingThirdPointer').removeClass('slideDotOff');
+      $('#brandingThirdPointer').addClass('slideDotOn');
+
+      $('#brandingSecondPointer').removeClass('slideDotOn');
+      $('#brandingSecondPointer').addClass('slideDotOff');
+
+      $('#brandingFirstPointer').removeClass('slideDotOn');
+      $('#brandingFirstPointer').addClass('slideDotOff');
     });
 
     //editorial slider
