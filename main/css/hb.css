@@ -86,13 +86,11 @@ a:hover{
 
 #portfolio{
 	width:1280px;
-	padding:0 90px;
 	margin:0 auto;
 }
 
 #portfolioNav{
 	width: 1280px;
-	padding:0 90px;
 	margin:0 auto 100px auto;
 }
 
@@ -126,7 +124,8 @@ a:hover{
 .mainSlide{
 	width: 334px;
 	height: 334px;
-	margin-right:103px;
+	padding-left:90px;
+	margin-right:101px;
 }
 
 .thumbnail{
@@ -165,7 +164,6 @@ a:hover{
 #illust{
 	width:1280px;
 	height:450px;
-	padding:0 90px;
 	margin:0 auto 64px auto;
 }
 
