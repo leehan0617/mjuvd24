@@ -170,27 +170,23 @@ a:hover{
 #branding{
 	width:1280px;
 	height:450px;
-	padding:0 90px;
 	margin:0 auto 64px auto;
 }
 
 #editorial{
 	width:1280px;
 	height:450px;
-	padding:0 90px;
 	margin:0 auto 64px auto;
 }
 
 #ux{
 	width:1280px;
 	height:450px;
-	padding:0 90px;
 	margin:0 auto 195px auto;
 }
 
 #direction{
 	width:1280px;
-	padding:0 90px;
 	margin:0 auto 100px auto;
 }
 
@@ -202,7 +198,6 @@ a:hover{
 
 #directionLetter{
 	width:1280px;
-	padding:0 90px;
 	margin:0 auto 85px auto;
 }
 #footerWrap{
@@ -214,7 +209,7 @@ a:hover{
 	width:1280px;
 	margin:0 auto;
 	color:#ffffff;
-	padding:22px 90px;
+	padding:22px 0;
 }
 
 #footerKorean{
