@@ -12,6 +12,11 @@ body {
           box-sizing: border-box;
 }
 
+a:link{
+	text-decoration: none;
+	color : #a0a0a0;
+}
+
 #topBlank {
 	margin-top : 55px;
 }
