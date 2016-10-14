@@ -8,6 +8,17 @@
 }
 
 @font-face{
+	font-family: 'Nanum-Gothic'
+	src: url(../font/NanumGothic.woff) format('truetype');
+}
+
+@font-face{
+	font-family: 'Nanum-Gothic-Bold'
+	src : url(../font/NanumGothicBold.woff) format('truetype');
+}
+
+/*
+@font-face{
 	font-family : 'Yoon_520';
 	src : url(../font/Yoon520.eot) format('truetype');
 	src : url(../font/Yoon_520TT.ttf) format('truetype');
@@ -23,3 +34,4 @@
 	font-family: 'Yoon-360';
 	src: url(../font/Yoon360.eot) format('truetype');
 }
+*/
