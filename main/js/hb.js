@@ -37,17 +37,6 @@ $(function(){
     $('#uxFirstPointer').removeClass('slideDotOff');
     $('#uxFirstPointer').addClass('slideDotOn');
 
-    // $('a[href^="#"]').on('click',function (e) {
-    //     //e.preventDefault();
-    //     var id = $(this).attr('href');
-    //     var offset = 120;
-    //     var target = $(id).offset().top - offset;
-    //
-    //     var target = $(id).offset().top - offset;
-    //         $('html, body').animate({scrollTop:target}, 500);
-    //        // event.preventDefault();
-    // });
-
     /* soft scroll */
     $('#headerAbout').on('click' , function(e){
       var id = $(this).attr('href');
@@ -86,14 +75,12 @@ $(function(){
     // illust slider
     var bxSlider = $('.bxSlider').bxSlider({
         mode : 'fade',
-        captions : true,
         auto : true,
         pagerCustom: '#bx-pager',
         //임의로 없애기위해서 셀럭터이름 무작이로 지음
         nextSelector: '#dd',
         prevSelector: '#ss',
         onSlideNext : function($slideElement, oldIndex, newIndex){
-            // console.log(oldIndex , newIndex);
             if(newIndex == '8'){
                 $('.secondSlideList').show();
                 $('.firstSlideList').hide();
@@ -142,7 +129,6 @@ $(function(){
         bxSlider.goToSlide(0);
         bxSlider.startAuto();
 
-        // var idx = bxSlider.getCurrentSlide()
         $('.firstSlideList').show();
         $('.secondSlideList').hide();
         $('.thirdSlideList').hide();
@@ -198,13 +184,11 @@ $(function(){
     // branding slider
     var bxSlider2 = $('.bxSlider2').bxSlider({
         mode : 'fade',
-        captions : true,
         auto : true,
         pagerCustom: '#bx-pager2',
         nextSelector: '#ddd',
         prevSelector: '#sss',
         onSlideNext : function($slideElement, oldIndex, newIndex){
-            // console.log(oldIndex , newIndex);
             if(newIndex == '8'){
                 $('.brandingSecondSlideList').show();
                 $('.brandingFirstSlideList').hide();
@@ -308,7 +292,6 @@ $(function(){
     //editorial slider
     var bxSlider3 = $('.bxSlider3').bxSlider({
         mode : 'fade',
-        captions : true,
         auto : true,
         pagerCustom: '#bx-pager3',
         controls : false,
@@ -416,7 +399,6 @@ $(function(){
     //ux slider
     var bxSlider4 = $('.bxSlider4').bxSlider({
         mode : 'fade',
-        captions : true,
         auto : true,
         pagerCustom: '#bx-pager4',
         controls : false,
