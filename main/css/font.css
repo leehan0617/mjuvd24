@@ -1,37 +1,15 @@
 @charset "utf-8";
-
-@font-face{
-	font-family : 'Gotham';
-	src : url(../font/Gotham-Book.oft.eot) format('truetype');
-	src : url(../font/Gotham_Book.ttf) format('truetype');
-	src : url(../font/Gotham-Book.woff) format('truetype');
+@font-face {
+    font-family: 'Gotham';
+    src: url(../font/Gotham-Book.oft.eot) format('truetype');
+    src: url(../font/Gotham_Book.ttf) format('truetype');
+    src: url(../font/Gotham-Book.woff) format('truetype');
 }
 
-@font-face{
-	font-family: 'Nanum-Gothic'
-	src: url(../font/NanumGothic.woff) format('truetype');
+@font-face {
+    font-family: 'Nanum-Gothic' src: url(../font/NanumGothic.woff) format('truetype');
 }
 
-@font-face{
-	font-family: 'Nanum-Gothic-Bold'
-	src : url(../font/NanumGothicBold.woff) format('truetype');
+@font-face {
+    font-family: 'Nanum-Gothic-Bold' src: url(../font/NanumGothicBold.woff) format('truetype');
 }
-
-/*
-@font-face{
-	font-family : 'Yoon_520';
-	src : url(../font/Yoon520.eot) format('truetype');
-	src : url(../font/Yoon_520TT.ttf) format('truetype');
-}
-
-@font-face{
-	font-family : 'Yoon-540';
-	src: url(../font/Yoon540.eot) format('truetype');
-	src : url(../font/Yoon_540TT.ttf) format('truetype');
-}
-
-@font-face{
-	font-family: 'Yoon-360';
-	src: url(../font/Yoon360.eot) format('truetype');
-}
-*/

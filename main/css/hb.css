@@ -1,234 +1,237 @@
 @charset "utf-8";
-
-body{
-	/*white-space: nowrap;
+body {
+    /*white-space: nowrap;
 	overflow-x:scroll;
 	*/
-	overflow-x:hidden;
-	overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-a{
-	font-family: Gotham;
-	font-size:21px;
-	color:#7a7a7a;
+a {
+    font-family: Gotham;
+    font-size: 21px;
+    color: #7a7a7a;
 }
 
-a:link{
-	text-decoration: none;
+a:link {
+    text-decoration: none;
 }
 
-a:active{
-	color:#28323f;
+a:active {
+    color: #28323f;
 }
 
-a:hover{
-	text-decoration: none;
-	color:#28323f;
+a:hover {
+    text-decoration: none;
+    color: #28323f;
 }
 
-.changeHeaderColor{
-	color:#28323f;
-	font-weight: bold;
+.changeHeaderColor {
+    color: #28323f;
+    font-weight: bold;
 }
 
-#videoWrap{
-	background-color: black;
-	height:720px;
+#videoWrap {
+    background-color: black;
+    height: 720px;
 }
 
 #videoSection {
-	width:1280px;
-	margin:0 auto;
+    width: 1280px;
+    margin: 0 auto;
 }
 
-#navWrap{
-	position: fixed;
-	top: 720px;
-	width:100%;
-  height:106px;
-  z-index:99999;
-	background-color: #ffffff;
-	opacity: 0.95;
-	-webkit-box-shadow: 0 1px 0 1px rgba(0,0,0,0.2);
-	box-shadow: 0 1px 0 1px rgba(0,0,0,0.2);
+#navWrap {
+    position: fixed;
+    top: 720px;
+    width: 100%;
+    height: 106px;
+    z-index: 99999;
+    background-color: #ffffff;
+    opacity: 0.95;
+    -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
 }
+
 #navWrap #menuNav {
-	margin:0 auto;
-	height:106px;
-    width:1280px;
+    margin: 0 auto;
+    height: 106px;
+    width: 1280px;
 }
 
-#menuNav ul{
-	padding:28px 90px;
-	height:50px;
+#menuNav ul {
+    padding: 28px 90px;
+    height: 50px;
 }
 
-#menuNav ul li{
-	display: inline-block;
-	cursor: pointer;
-	font-family: Gotham;
-	font-size: 21px;
-	color:#7a7a7a;
-	height:50px;
-	border:0;
+#menuNav ul li {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Gotham;
+    font-size: 21px;
+    color: #7a7a7a;
+    height: 50px;
+    border: 0;
 }
 
-#mainImgSectionWrap{
-	background-color:#eeeeee;
+#mainImgSectionWrap {
+    background-color: #eeeeee;
 }
 
-#mainImgSection{
-	width:1280px;
-	height:673px;
-	margin:103px auto 195px auto;
+#mainImgSection {
+    width: 1280px;
+    height: 673px;
+    margin: 103px auto 195px auto;
 }
 
-#portfolio{
-	width:1280px;
-	margin:0 auto;
+#portfolio {
+    width: 1280px;
+    margin: 0 auto;
 }
 
-#portfolioNav{
-	width: 1280px;
-	margin:0 auto 100px auto;
+#portfolioNav {
+    width: 1280px;
+    margin: 0 auto 100px auto;
 }
 
-#portfolioNav ul{
-	text-align: left;
-}
-#portfolioNav ul li{
-	font-size: 18px;
-	font-family: Gotham;
-	color:#a1a1a1;
-	display: inline-block;
-}
-#portfolioNav .link{
-	cursor:pointer;
+#portfolioNav ul {
+    text-align: left;
 }
 
-.portfolioBox{
-	display: inline-block;
+#portfolioNav ul li {
+    font-size: 18px;
+    font-family: Gotham;
+    color: #a1a1a1;
+    display: inline-block;
 }
 
-.slideBigImg{
-	width:334px;
-	height:334px;
+#portfolioNav .link {
+    cursor: pointer;
 }
 
-.slideSmallImg{
-	width:167px;
-	height:167px;
+.portfolioBox {
+    display: inline-block;
 }
 
-.mainSlide{
-	width: 334px;
-	height: 334px;
-	padding-left:90px;
-	margin-right:101px;
+.slideBigImg {
+    width: 334px;
+    height: 334px;
 }
 
-.thumbnail{
-	height:334px;
+.slideSmallImg {
+    width: 167px;
+    height: 167px;
 }
 
-.firstSlideList{
-	display: inline-block;
-	width:167px;
-	height:167px;
+.mainSlide {
+    width: 334px;
+    height: 334px;
+    padding-left: 90px;
+    margin-right: 101px;
 }
 
-.secondSlideList{
-	display: inline-block;
+.thumbnail {
+    height: 334px;
 }
 
-.thirdSlideList{
-	display: inline-block;
+.firstSlideList {
+    display: inline-block;
+    width: 167px;
+    height: 167px;
 }
 
-.portfolioTitle{
-	font-family: Gotham;
-	font-weight: bold;
-	color:#646464;
-	font-size: 22px;
+.secondSlideList {
+    display: inline-block;
 }
 
-.slideDotOn{
-	width : 10px;
-	height : 10px;
-	-moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-	background-color: #29323f;
+.thirdSlideList {
+    display: inline-block;
 }
 
-.slideDotOff{
-	width : 10px;
-	height : 10px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-	background-color: #afafaf;
+.portfolioTitle {
+    font-family: Gotham;
+    font-weight: bold;
+    color: #646464;
+    font-size: 22px;
 }
 
-#illust{
-	width:1280px;
-	height:450px;
-	margin:0 auto 64px auto;
+.slideDotOn {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #29323f;
 }
 
-#branding{
-	width:1280px;
-	height:450px;
-	margin:0 auto 64px auto;
+.slideDotOff {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #afafaf;
 }
 
-#editorial{
-	width:1280px;
-	height:450px;
-	margin:0 auto 64px auto;
+#illust {
+    width: 1280px;
+    height: 450px;
+    margin: 0 auto 64px auto;
 }
 
-#ux{
-	width:1280px;
-	height:450px;
-	margin:0 auto 195px auto;
+#branding {
+    width: 1280px;
+    height: 450px;
+    margin: 0 auto 64px auto;
 }
 
-#direction{
-	width:1280px;
-	margin:0 auto 100px auto;
+#editorial {
+    width: 1280px;
+    height: 450px;
+    margin: 0 auto 64px auto;
 }
 
-#googleMap{
-	margin-bottom:75px;
-	width:100%;
-	height:510px;
+#ux {
+    width: 1280px;
+    height: 450px;
+    margin: 0 auto 195px auto;
 }
 
-#directionLetter{
-	width:1280px;
-	margin:0 auto 85px auto;
-}
-#footerWrap{
-	background-color:#28323f;
-	height:79px;
+#direction {
+    width: 1280px;
+    margin: 0 auto 100px auto;
 }
 
-#footerSection{
-	width:1280px;
-	margin:0 auto;
-	color:#ffffff;
-	padding:22px 0;
+#googleMap {
+    margin-bottom: 75px;
+    width: 100%;
+    height: 510px;
 }
 
-#footerKorean{
-	font-family: Nanum-Gothic;
-	line-height: 160%;
-	font-size: 12px;
+#directionLetter {
+    width: 1280px;
+    margin: 0 auto 85px auto;
 }
 
-#footerEnglish{
-	font-size: 12px;
-	font-family: Gotham;
+#footerWrap {
+    background-color: #28323f;
+    height: 79px;
+}
+
+#footerSection {
+    width: 1280px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 22px 0;
+}
+
+#footerKorean {
+    font-family: Nanum-Gothic;
+    line-height: 160%;
+    font-size: 12px;
+}
+
+#footerEnglish {
+    font-size: 12px;
+    font-family: Gotham;
 }
