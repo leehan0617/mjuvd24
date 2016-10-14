@@ -62,6 +62,7 @@ a:link {
 
 #textSectionMain {
     word-break: break-all;
+    line-height: 160%;
     color: #515151;
     font-size: 13px;
     margin-bottom: 71px;
