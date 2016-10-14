@@ -1,9 +1,72 @@
 @charset "utf-8";
 
+@font-face{
+	font-family : 'Gotham';
+	src : url(../font/Gotham-Book.oft.eot) format('truetype');
+	src : url(../font/Gotham_Book.ttf) format('truetype');
+	src : url(../font/Gotham-Book.woff) format('truetype');
+}
+
+@font-face{
+	font-family : 'Yoon_520';
+	src : url(../font/Yoon520.eot) format('truetype');
+	src : url(../font/Yoon_520TT.ttf) format('truetype');
+}
+
+@font-face{
+	font-family : 'Yoon-540';
+	src: url(../font/Yoon540.eot) format('truetype');
+	src : url(../font/Yoon_540TT.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'Yoon-360';
+	src: url(../font/Yoon360.eot) format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Gotham;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	font-family: Nanum-Gothic;
 	line-height: 1;
 	background-color: #f3f3f3;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 * {
@@ -12,159 +75,6 @@ body {
           box-sizing: border-box;
 }
 
-#topBlank {
-	margin-top : 55px;
-}
-
-.main {
-	width : 1280px;
-	margin : 0 auto 43px auto;
-	padding : 0 90px;
-}
-
-#imgSection {
-	display: inline-block;
-	vertical-align: top;
-	width : 729px;
-	margin-right : 34px;
-}
-
-#textSection {
-	display: inline-block;
-	width : 330px;
-}
-
-#textSectionCategory {
-	margin-top : 5px;
-	margin-bottom : 23px;
-	font-family: Gotham;
-	font-size : 15px;
-	color : #f0564e;
-}
-
-#textSectionTitle {
-	margin-bottom : 13px;
-	font-size: 26px;
-	color : #1b1b1b;
-}
-
-#textSectionSubTitle {
-	font-family: Gotham;
-	font-size: 14px;
-	color : #1b1b1b;
-	margin-bottom : 34px;
-}
-
-#textSectionMain {
-	word-break : break-all;
-	color : #515151;
-	font-size : 13px;
-	margin-bottom : 71px;
-}
-
-#authorInfo {
-	margin-bottom : 70px;
-}
-
-#authorPhoto {
-	display: inline-block;
-	margin-right : 17px;
-}
-
-#authorInfoText {
-	display: inline-block;
-	vertical-align:top;
-}
-
-#authorKorName {
-	font-family: Nanum-Gothic-Bold;
-	font-size: 18px;
-	color : #535353;
-}
-
-#authorEngName {
-	font-size: 12px;
-	color : #7d7d7d;
-}
-
-#authorEmail {
-	font-size: 13px;
-	color : #7d7d7d;
-}
-
-#authorPhoneNumber {
-	font-size: 13px;
-	color : #7d7d7d;
-}
-
-#accordian1{
-	margin-bottom : 31px;
-}
-
-#accordian1Img{
-	cursor: pointer;
-}
-
-#accordian1Content{
-	display: none;
-}
-
-#accordian1Ul{
-	margin-top : 22px;
-	margin-left : 37px;
-
-}
-
-#accordian1Ul li {
-	font-size: 12.6px;
-	margin-bottom : 16px;
-	color : #a0a0a0;
-}
-
-.accordianSelectText{
-	color : #1b1b1b;
-}
-#accordian2Img{
-	cursor: pointer;
-}
-
-#accordian2Content{
-	display: none;
-}
-
-#accordian2Ul{
-		margin-top : 22px;
-		margin-left :37px;
-		font-size: 12.8px;
-		color : #a0a0a0;
-		word-spacing:7px;
-		line-height:200%;
-}
-
-#footerWrap{
-	background-color:#28323f;
-	height:79px;
-}
-
-#footerSection{
-	width:1280px;
-	margin:0 auto;
-	color:#ffffff;
-	padding:22px 0;
-}
-
-#footerKorean{
-	font-family: Nanum-Gothic;
-	line-height: 160%;
-	font-size: 12px;
-}
-
-#footerEnglish{
-	font-size: 12px;
-	font-family: Gotham;
-}
-
-/*
 body{
 	white-space: nowrap;
 	overflow-x:scroll;
@@ -200,9 +110,8 @@ ul li >div{display: none; height:200px;}
 	margin : 0 auto;
 }
 #mjFooter{
-	background-color:#f0564e;
+	background-color:#f0564e; 
 	color:#ffffff;
 	padding-top:60px;
 	padding-bottom:60px;
 }
-*/

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>60092514 Illutst Page</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../../css/sub.css"/>
+
+	<!-- js -->
+	<script src="../../js/jquery.js"></script>
+	<script>
+	$(function(){
+		$('#accordian').find('span').click(function(){
+			$(this).parent().find('span').not(this).next().slideUp();
+			$(this).next().slideToggle(300);
+		});		
+	})
+	</script>
+
+	<style>
+	ul{
+		margin:auto;
+		border-bottom:0 none;
+	}
+
+	ul li {
+		border-bottom : 1px solid #f0564e;
+		margin-bottom:20px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 위에서 180px을 띄운다 -->
+		<div style="height:180px;">
+		</div>
+
+		<!-- 상위 div -->
+		<div id="topDiv">
+			<div class="topDivBox" style="padding-right:65px;">
+				<img src="../illust_img/sub_left.jpeg" style="width:625px; height:600px;"/>	
+			</div>
+			<div class="topDivBox">
+				<div style="font-size:21px; margin-bottom:25px; font-family:Gotham; color:#646464;">Branding</div>
+				<div style="font-size:36px; color:#f0564e;">LIL' BUNNY</div>
+				<div style="font-size:18px; color:#f0564e; margin-bottom:30px;">Program Identity</div>
+				<div style="font-size:16px; color:#515151; margin-bottom:100px;">
+				키티함을 위한 패키지 디자인으로, 아이들에게 관심이 많고<br/>
+				좋은 것만 먹이고 싶어하는 엄마들을 타겟으로 한 홈베이킹<br/>
+				패키지입니다.2030 후반의 젊은 키티맘들에게 맞추어 세련<br/>
+				되고 모던한 디자인을 하였습니다.</div>
+				<div>
+					<div class="subTopDivBox" style="padding-right:20px;"><img src="../illust_img/sub_photo.jpeg" style="width:90px; height:90px;"></div>
+					<div class="subTopDivBox" style="padding-top:20px;">
+						<span style="font-size:18px; padding-right:5px; color:#646464;">한헌영</span>
+						<span style="font-size:12px; color:#646464;">Han HeonYeong</span>
+						<div style="padding-top:20px; color:#535353;">
+							hh7330485@naver.com<br/>
+							010.6818.0485
+						</div>
+					</div>
+				</div>
+				<!-- 아코디언 -->
+				<div style="padding-top:40px; height:35px;cursor:pointer; margin-bottom:20px;">
+					<ul id="accordian">
+						<li>
+							<img src="../../img/btn_arrow_scrollDown.png" style="padding-left:10px;padding-right:15px; align:center"/>
+							<span style="font-size:20px; color:#f0564e;">SUBJECT</span>
+							<div style="line-height:200%; padding-left:40px; margin-top:30px; margin-bottom:30px; height:100%; color:#535353;">
+									Illust<br/>
+									<hanbin style="color:#f0564e;">Branding</hanbin><br/>
+									Editorial<br/>
+									UX Desigin<br/>
+							</div>
+						</li>
+						<li>
+							<img src="../../img/btn_arrow_scrollDown.png" style="padding-left:10px;padding-right:15px;"/>
+							<span style="font-size:20px; color:#f0564e;">MEMBER</span>
+							<div style="margin-top:30px; word-spacing:15px; line-height:200%;padding-left:35px; color:#535353;">
+								김가영 김은경 김현정 김연주 고동완 성혜지<br/>
+								민희수 이성희 이세라 이혜진 주우현 문성완<br/>
+								신준범 조희정 남윤주 이하영 조우영 이지혜<br/>
+								이태수 최지현 차아랑 정서희 조송연 <hanbin style="color:#f0564e;">한헌영</hanbin><br/>
+								황우빈 주호
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<!-- 아코디언 -->
+			</div>
+		</div>
+
+		<!-- topDiv에서 130px 밑에 위치한다. -->
+		<div style="height:350px;">
+		</div>
+
+		<!-- 중간 div -->
+		<div id="midDiv">
+			<div>
+				<img src="../illust_img/sub_main.jpeg" style="width:1100px; height:100%;"/>
+			</div> 
+		</div>
+	</div>
+
+	<div style="background-color:#f0564e; margin-top:450px;">
+		<div id="wrap2">
+			<!-- bottom div -->
+			<div id="mjFooter">
+	            <div class="mj1" style="padding-right:4.68%; padding-left:4.68%; font-size:12px;">
+	                <span id="han1">명지대학교 시각디자인전공 경기도 용인시 처인구 명지로 116 명지대학교 디자인조형센터</span><br/>
+	                Copyright (C) 2016 hongikArt Center Research Institute. All Rights Reserved
+	            </div>
+	        </div>
+		</div>
+	</div>
+</body>
+</html>
