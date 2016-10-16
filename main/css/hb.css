@@ -10,7 +10,7 @@ body {
 a {
     font-family: Gotham;
     font-size: 21px;
-    color: #7a7a7a;
+    color: #a0a0a0;
 }
 
 a:link {
@@ -39,6 +39,7 @@ a:hover {
 #videoSection {
     width: 1280px;
     margin: 0 auto;
+    line-height: 0px;
 }
 
 #navWrap {
@@ -48,7 +49,7 @@ a:hover {
     height: 106px;
     z-index: 99999;
     background-color: #ffffff;
-    opacity: 0.95;
+    opacity: 0.75;
     -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
 }
@@ -81,7 +82,7 @@ a:hover {
 #mainImgSection {
     width: 1280px;
     height: 673px;
-    margin: 103px auto 195px auto;
+    margin: 112px auto 195px auto;
 }
 
 #portfolio {
@@ -151,7 +152,7 @@ a:hover {
 .portfolioTitle {
     font-family: Gotham;
     font-weight: bold;
-    color: #646464;
+    color: #a0a0a0;
     font-size: 22px;
 }
 

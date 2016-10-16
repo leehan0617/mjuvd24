@@ -512,22 +512,46 @@ $(function() {
     });
 
     $(document).on('click', '.bx-next, .bx-prev, #bx-pager', function() {
-        bxSlider.stopAuto();
-        bxSlider.startAuto();
+        // bxSlider.stopAuto();
+        // bxSlider.startAuto();
     });
 
     $(document).on('click', '.bx-next, .bx-prev, #bx-pager2', function() {
-        bxSlider2.stopAuto();
-        bxSlider2.startAuto();
+        // bxSlider2.stopAuto();
+        // bxSlider2.startAuto();
     });
 
     $(document).on('click', '.bx-next, .bx-prev, #bx-pager3', function() {
-        bxSlider3.stopAuto();
-        bxSlider3.startAuto();
+        // bxSlider3.stopAuto();
+        // bxSlider3.startAuto();
     });
 
     $(document).on('click', '.bx-next, .bx-prev, #bx-pager4', function() {
-        bxSlider4.stopAuto();
+        // bxSlider4.stopAuto();
+        // bxSlider4.startAuto();
+    });
+
+    $('#bx-pager').mouseenter(function(){
+      bxSlider.stopAuto();
+    }).mouseleave(function(){
+        bxSlider.startAuto();
+    });
+
+    $('#bx-pager2').mouseenter(function(){
+      bxSlider2.stopAuto();
+    }).mouseleave(function(){
+        bxSlider2.startAuto();
+    });
+
+    $('#bx-pager3').mouseenter(function(){
+      bxSlider3.stopAuto();
+    }).mouseleave(function(){
+        bxSlider3.startAuto();
+    });
+
+    $('#bx-pager4').mouseenter(function(){
+      bxSlider4.stopAuto();
+    }).mouseleave(function(){
         bxSlider4.startAuto();
     });
 });
@@ -575,7 +599,8 @@ function googleMapInit() {
     var mapOptions = {
         zoom: zoomLevel,
         center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel : false
     }
     var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
@@ -593,4 +618,9 @@ function googleMapInit() {
     google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map, marker);
     });
+}
+
+// 작은 이미지 클릭시 서브페이지로 이동하는 함수
+function goSubPage(element){
+  $(location).attr('href' , element.id);
 }
