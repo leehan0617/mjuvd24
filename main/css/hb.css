@@ -49,9 +49,9 @@ a:hover {
     height: 106px;
     z-index: 99999;
     background-color: #ffffff;
-    opacity: 0.75;
-    -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    -webkit-box-shadow: 0 1px 0 1px rgba(159 , 159, 160, 0.2);
+    box-shadow: 0 1px 0 1px rgba(159 , 159, 160, 0.2);
 }
 
 #navWrap #menuNav {
@@ -127,8 +127,8 @@ a:hover {
 .mainSlide {
     width: 334px;
     height: 334px;
-    padding-left: 90px;
-    margin-right: 101px;
+    padding-left: 96px;
+    margin-right: 85px;
 }
 
 .thumbnail {
@@ -152,8 +152,8 @@ a:hover {
 .portfolioTitle {
     font-family: Gotham;
     font-weight: bold;
-    color: #a0a0a0;
-    font-size: 22px;
+    color: #595757;
+    font-size: 19px;
 }
 
 .slideDotOn {
@@ -177,19 +177,19 @@ a:hover {
 #illust {
     width: 1280px;
     height: 450px;
-    margin: 0 auto 64px auto;
+    margin: 0 auto 40px auto;
 }
 
 #branding {
     width: 1280px;
     height: 450px;
-    margin: 0 auto 64px auto;
+    margin: 0 auto 40px auto;
 }
 
 #editorial {
     width: 1280px;
     height: 450px;
-    margin: 0 auto 64px auto;
+    margin: 0 auto 40px auto;
 }
 
 #ux {

@@ -539,6 +539,7 @@ $(function() {
 
     $('#bx-pager2').mouseenter(function(){
       bxSlider2.stopAuto();
+      console.log($('#bx-pager2'));
     }).mouseleave(function(){
         bxSlider2.startAuto();
     });
