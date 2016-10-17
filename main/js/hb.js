@@ -511,6 +511,15 @@ $(function() {
         $('#uxFirstPointer').addClass('slideDotOff');
     });
 
+    $('.bxSlideSmallImg').mouseenter(function(){
+      bxSlider.stopAuto();
+      bxSlider.goToSlide(this.name);
+    });
+
+    $('.bxSlideSmallImg').mouseleave(function(){
+      bxSlider.startAuto();
+    });
+
     $('.bx2SlideSmallImg').mouseenter(function(){
       bxSlider2.stopAuto();
       bxSlider2.goToSlide(this.name);
