@@ -488,12 +488,12 @@ $(function() {
       bxSlider3.startAuto();
     });
 
-    $('.bxSlide4SmallImg').mouseenter(function(){
+    $('.uxSlideSmallImg').mouseover(function(){
       bxSlider4.stopAuto();
       bxSlider4.goToSlide(this.name);
     });
 
-    $('.bxSlide4SmallImg').mouseleave(function(){
+    $('.uxSlideSmallImg').mouseleave(function(){
       bxSlider4.startAuto();
     });
 });
