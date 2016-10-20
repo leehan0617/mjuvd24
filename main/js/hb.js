@@ -442,25 +442,6 @@ $(function() {
         $('#uxThirdPointer').addClass('slideDotOff');
     });
 
-    // $('#uxThirdPointer').click(function() {
-    //     bxSlider4.stopAuto();
-    //     bxSlider4.goToSlide(16);
-    //     bxSlider4.startAuto();
-    //
-    //     $('.uxThirdSlideList').show();
-    //     $('.uxFirstSlideList').hide();
-    //     $('.uxSecondSlideList').hide();
-    //
-    //     $('#uxThirdPointer').removeClass('slideDotOff');
-    //     $('#uxThirdPointer').addClass('slideDotOn');
-    //
-    //     $('#uxSecondPointer').removeClass('slideDotOn');
-    //     $('#uxSecondPointer').addClass('slideDotOff');
-    //
-    //     $('#uxFirstPointer').removeClass('slideDotOn');
-    //     $('#uxFirstPointer').addClass('slideDotOff');
-    // });
-
     $('.bxSlideSmallImg').mouseenter(function(){
       bxSlider.stopAuto();
       bxSlider.goToSlide(this.name);
@@ -479,12 +460,12 @@ $(function() {
       bxSlider2.startAuto();
     });
 
-    $('.bxSlide3SmallImg').mouseenter(function(){
+    $('.editSlideSmallImg').mouseover(function(){
       bxSlider3.stopAuto();
       bxSlider3.goToSlide(this.name);
     });
 
-    $('.bxSlide3SmallImg').mouseleave(function(){
+    $('.editSlideSmallImg').mouseleave(function(){
       bxSlider3.startAuto();
     });
 
